@@ -3,7 +3,7 @@
 return [
     'paths' => ['api/*', 'sanctum/csrf-cookie'],
     'allowed_methods' => ['*'],
-    'allowed_origins' => ['react-app-f1.vercel.app'],
+    'allowed_origins' => ['https://react-app-f1.vercel.app'],
     'allowed_origins_patterns' => [],
     'allowed_headers' => ['*'],
     'exposed_headers' => ['*'],
