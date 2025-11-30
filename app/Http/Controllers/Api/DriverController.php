@@ -39,7 +39,7 @@ class DriverController extends Controller
                 'success' => false,
                 'message' => 'Error de validacion',
                 'errors' => $validador->errors()
-            ]);
+            ], 422);
         }
 
         $team = Team::where('team', $request->team)->first();
@@ -102,7 +102,7 @@ class DriverController extends Controller
                 'success' => false,
                 'message' => 'Error de validacion',
                 'errors' => $validador->errors()
-            ]);
+            ], 422);
         }
 
         $data = $request->all();
